@@ -1,0 +1,45 @@
+{
+    "user": {
+        "fullName": "KOPANO MABUYA",
+        "photo": "./Kopano.jpg"
+    },
+    "city": {
+        "name": "Rio De Jeneiro",
+        "photo": "./Fave City.jpg",
+        "description": "Rio de Janeiro serves as a hub for Brazilian music, cinema, and literature, nurturing many of the nation's celebrated artists and thinkers. The city's beaches, including Copacabana and Ipanema, are not only places of relaxation but also stages for cultural events, musical performances, and art installations. There are many beautiful places that one can go to and many adventures."
+    },
+    "foreignLanguage": {
+        "language": "Portuguese",
+        "phrases": [
+            {
+                "englishPhrase": "Hello",
+                "foreignLanguage": "Olá!"
+            },
+            {
+                "englishPhrase": "Have a nice day",
+                "foreignLanguage": "Tenha um bom dia"
+            },
+            {
+                "englishPhrase": "Thank you",
+                "foreignLanguage": "Obrigado"
+            }
+        ]
+    },
+    "favouriteSubjects": [
+        {
+            "name": "Agile Rapid Skills Acquisition",
+            "description": "Agile Rapid Skills Acquisition is my favourite subject because I am always learning new skills that emphasizes adaptability, flexibility, efficiency and continous improvement.</",
+            "photo": "./Agile.jpeg"
+        },
+        {
+            "name": "Business Engineering Systems",
+            "description": "Agile Rapid Skills Acquisition is my favourite subject because I am always learning new skills that emphasizes adaptability, flexibility, efficiency and continous improvement.",
+            "photo": "./Business Engineering.jpg"
+        },
+        {
+            "name": "Full Stack Web Development",
+            "description": "Full Stack Web Development is my favourite subject because I am always learning new skills that emphasizes adaptability, flexibility, efficiency and continous improvement.",
+            "photo": "./Web Development.png"
+        }
+    ]
+}

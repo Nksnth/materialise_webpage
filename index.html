@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <header>
+        <div class="row center-align">
+            <div class="col s12 #1e88e5 blue darken-1">
+
+                <h1>
+                    <marquee behavior="scroll" direction="left">My Basic Webpage</marquee>
+                </h1>
+
+            </div>
+            <div class="col l4 m6 s12 name-text" id="fullName"><h3>{{Nkosinathi}}</h3></div>
+            <div class="col l4 m6 s12"><img src="{{public/Nathi.jpg}}" width="200" alt="{{Nkosinathi}}" class="images">
+            </div>
+        </div>
+    </header>
+    <div class="row center-align #4db6ac teal lighten-2">
+        <h3 class="center-align">My Favourite City</h3>
+        <h3>{{Carlifornia}}</h3>
+        <div class="col l4 m6 s12"><img src="{{public/California.jpeg}}" width="400" alt="{{Carlifornia}}"></div>
+        <div class="col l4 m6 s12">
+            <p>{{California with sun, sand, surf and mountains, the West Coast state California is known for its many attractions
+                that lure travelers year-round, from famous landmarks such as the Golden Gate Bridge and the Hollywood sign, to
+                the Golden State's rich outdoor opportunities, Palm trees all over the city, this eclectic state makes a
+                well-rounded vacation.}}</p>
+        </div>
+    </div>
+    <div class="block">
+        <h3 class="center-align">Foreign Language</h3>
+    </div>
+    <div class="#1e88e5 blue darken-1">
+        <table>
+            <thead>
+                <tr>
+                    <th>Latin</th>
+                    <th>English</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each foreignLanguage.phrases}}
+                <tr>
+                    <td>{{Sapientia est scientia}}</td>
+                    <td>{{Wisdom is Knowledge}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+    <style>
+        body {
+            background-image: "public/Golden Gate Bridge.jpeg";
+        }
+
+        div#fullName {
+            font-size: xxx-large;
+            margin-top: 85px;
+        }
+
+        @media (max-width: 600px) {
+            .zig-zag {
+                float: right !important;
+            }
+
+            div#fullName {
+                font-size: xxx-large;
+                margin-top: 85px;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .header {
+                flex-direction: column;
+                text-align: center;
+
+            }
+
+            div#fullName {
+                font-size: xxx-large;
+                margin-top: 85px;
+            }
+
+            .header h1 {
+                font-size: 1.2rem;
+
+                .animated-header {
+                    background-image: url("images/header-background.jpg");
+                    background-size: cover;
+                    animation: move-header 5s linear infinite;
+                }
+
+                @keyframes move-header {
+                    from {
+                        background-position: 100% center;
+                    }
+
+                    to {
+                        background-position: -100% center;
+                    }
+                }
+
+            }
+
+
+        }
+
+        .zig-zag-img {
+            float: left !important;
+        }
+        h3 {
+            color: black;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    </style>
+    <div class="#4db6ac teal lighten-2">
+        <h3 class="center-align">My favourite Subjects</h3>
+        <p class="center-align">I studied Advanced Diploma in Accountancy</p>
+        <div class="row">
+            <div class="col l4 m4 s12">
+                <div class="row">
+                    <h4 class="center-align">{{Accounting}}</h4>
+                    <p class="col s6">{{Accounting is my favourite subject because I enjoy working with Numbers}}</p>
+                    <img src="{public/Accounting discipline.jpeg{}}" width="150" alt="{{Accounting}}"
+                        class="images col s6">
+                </div>
+            </div>
+            <div class="col l4 m4 s12">
+                <div class="row">
+                    <h4 class="center-align">{{Auditing}}</h4>
+                    <p class="col s6 zig-zag">{{Auditing is my 2nd favourite subject because it allows me to be analytical}}</p>
+                    <img src="{{public/SAICA.jpg}}" width="150" alt="{{Auditing}}"
+                        class="images col s6 zig-zag-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
